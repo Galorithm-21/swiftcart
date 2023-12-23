@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:swiftcart/constants_used.dart';
 import 'package:swiftcart/default%20components/custom_icons.dart';
 import 'package:swiftcart/default%20components/formerrorshow.dart';
+import 'package:swiftcart/screens/signin_signout_usrAuth/otp_scrn.dart';
 class CompleteProfileScreen extends StatelessWidget {
   static String routeName = "/complete_profile";
 

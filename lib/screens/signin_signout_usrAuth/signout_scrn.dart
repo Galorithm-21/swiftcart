@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:swiftcart/constants_used.dart';
 import 'package:swiftcart/default%20components/custom_icons.dart';
 import 'package:swiftcart/default%20components/formerrorshow.dart';
-import 'package:swiftcart/screens/Sign%20In%20&%20Out%20Usr%20Authentication/complete_profile.dart';
-import 'package:swiftcart/screens/Sign%20In%20&%20Out%20Usr%20Authentication/signin_scrn.dart';
+import 'package:swiftcart/screens/signin_signout_usrAuth/complete_profile.dart';
+import 'package:swiftcart/screens/signin_signout_usrAuth/signin_scrn.dart';
+
 
 
 class SignUpScreen extends StatelessWidget {

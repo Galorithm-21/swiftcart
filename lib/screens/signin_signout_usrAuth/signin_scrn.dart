@@ -5,7 +5,8 @@ import 'package:swiftcart/default%20components/custom_icons.dart';
 import 'package:swiftcart/default%20components/formerrorshow.dart';
 import 'package:swiftcart/default%20components/keyboard_handeler_help.dart';
 import 'package:swiftcart/default%20components/noacc.dart';
-import 'package:swiftcart/screens/Sign%20In%20&%20Out%20Usr%20Authentication/forgot.dart';
+import 'package:swiftcart/screens/signin_signout_usrAuth/forgot.dart';
+
 
 
 class SignInScreen extends StatefulWidget {

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:swiftcart/constants_used.dart';
 
-import '../Sign In & Out Usr Authentication/signin_scrn.dart';
+import '../signin_signout_usrAuth/signin_scrn.dart';
+
+
 
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splash";
