@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swiftcart/default%20components/productdata/product.dart';
 import 'package:swiftcart/default%20components/productdata/product_card.dart';
+import 'package:swiftcart/screens/detailscrn/detailscrn_product.dart';
 
 class ProductsScreen extends StatelessWidget {
   const ProductsScreen({super.key});

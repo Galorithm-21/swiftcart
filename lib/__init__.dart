@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:swiftcart/constants_used.dart';
+import 'package:swiftcart/screens/homescrns_cartscrn/homescrn.dart';
 
 const Color inActiveIconColor = Color(0xFFB6B6B6);
 
@@ -23,14 +24,14 @@ class _InitScreenState extends State<InitScreen> {
     });
   }
 
-  // final pages = [
-  //   const HomeScreen(),
+  final pages = [
+    const HomeScreen(),
   //   const FavoriteScreen(),
   //   const Center(
   //     child: Text("Chat"),
   //   ),
   //   const ProfileScreen()
-  // ];
+  ];
 
   @override
   Widget build(BuildContext context) {
