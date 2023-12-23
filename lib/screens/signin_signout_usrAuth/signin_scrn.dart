@@ -7,6 +7,7 @@ import 'package:swiftcart/default%20components/keyboard_handeler_help.dart';
 import 'package:swiftcart/default%20components/noacc.dart';
 import 'package:swiftcart/screens/Sign%20In%20&%20Out%20Usr%20Authentication/forgot.dart';
 
+
 class SignInScreen extends StatefulWidget {
   static String routeName = "/signscreen";
 
@@ -75,7 +76,6 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 }
-
 class SocalCard extends StatelessWidget {
   const SocalCard({
     Key? key,
@@ -244,3 +244,4 @@ class _SignFormState extends State<SignForm> {
     );
   }
 }
+
