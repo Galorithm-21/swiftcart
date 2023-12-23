@@ -16,7 +16,7 @@ class LoginSuccessScreen extends StatelessWidget {
         children: [
           const SizedBox(height: 16),
           Image.asset(
-            "assets/images/success.png",
+            "assets/success.png",
             height: MediaQuery.of(context).size.height * 0.4, //40%
           ),
           const SizedBox(height: 16),
@@ -35,7 +35,7 @@ class LoginSuccessScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, InitScreen.routeName);
               },
-              child: const Text("Back to home"),
+              child: const Text("Let's Shop"),
             ),
           ),
           const Spacer(),

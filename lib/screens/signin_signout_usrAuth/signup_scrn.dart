@@ -5,8 +5,6 @@ import 'package:swiftcart/default%20components/formerrorshow.dart';
 import 'package:swiftcart/screens/signin_signout_usrAuth/complete_profile.dart';
 import 'package:swiftcart/screens/signin_signout_usrAuth/signin_scrn.dart';
 
-
-
 class SignUpScreen extends StatelessWidget {
   static String routeName = "/sign_up";
 
@@ -38,15 +36,7 @@ class SignUpScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SocalCard(
-                        icon: "assets/icons/google-icon.svg",
-                        press: () {},
-                      ),
-                      SocalCard(
-                        icon: "assets/icons/facebook-2.svg",
-                        press: () {},
-                      ),
-                      SocalCard(
-                        icon: "assets/icons/twitter.svg",
+                        icon: "icons/google-icon.svg",
                         press: () {},
                       ),
                     ],
@@ -130,8 +120,8 @@ class _SignUpFormState extends State<SignUpForm> {
               hintText: "Enter your email",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Mail.svg"),
             ),
           ),
           const SizedBox(height: 20),
@@ -161,8 +151,8 @@ class _SignUpFormState extends State<SignUpForm> {
               hintText: "Enter your password",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Lock.svg"),
             ),
           ),
           const SizedBox(height: 20),
@@ -192,8 +182,8 @@ class _SignUpFormState extends State<SignUpForm> {
               hintText: "Re-enter your password",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Lock.svg"),
             ),
           ),
           FormError(errors: errors),

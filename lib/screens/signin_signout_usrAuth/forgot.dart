@@ -44,6 +44,7 @@ class ForgotPasswordScreen extends StatelessWidget {
     );
   }
 }
+
 class ForgotPassForm extends StatefulWidget {
   const ForgotPassForm({super.key});
 
@@ -95,8 +96,8 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
               hintText: "Enter your email",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Mail.svg"),
             ),
           ),
           const SizedBox(height: 8),
@@ -105,7 +106,7 @@ class _ForgotPassFormState extends State<ForgotPassForm> {
           ElevatedButton(
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                // Do what you want to do
+                //send an email verification code to register email address
               }
             },
             child: const Text("Continue"),

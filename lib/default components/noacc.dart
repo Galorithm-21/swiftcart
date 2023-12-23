@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swiftcart/constants_used.dart';
-import 'package:swiftcart/screens/signin_signout_usrAuth/signout_scrn.dart';
+
+import '../screens/signin_signout_usrAuth/signup_scrn.dart';
 
 class NoAccountText extends StatelessWidget {
   const NoAccountText({

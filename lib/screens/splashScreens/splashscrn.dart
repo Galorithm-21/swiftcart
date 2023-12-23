@@ -3,8 +3,6 @@ import 'package:swiftcart/constants_used.dart';
 
 import '../signin_signout_usrAuth/signin_scrn.dart';
 
-
-
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splash";
 
@@ -19,15 +17,15 @@ class _SplashScreenState extends State<SplashScreen> {
   List<Map<String, String>> splashData = [
     {
       "text": "Welcome to SwiftCart.in, Let’s shop!",
-      "image": "assets/images/splash_1.png"
+      "image": "assets/splash1.jpg"
     },
     {
       "text": "We help people connect with store \naround India",
-      "image": "assets/images/splash_2.png"
+      "image": "assets/splash2.jpg"
     },
     {
       "text": "We show the easy way to shop. \nJust stay at home with us",
-      "image": "assets/images/splash_3.png"
+      "image": "assets/splash3.jpg"
     },
   ];
   @override
@@ -59,7 +57,9 @@ class _SplashScreenState extends State<SplashScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
                     children: <Widget>[
-                      const Spacer(),
+                      const Spacer(
+                        flex: 1,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(
@@ -78,12 +78,12 @@ class _SplashScreenState extends State<SplashScreen> {
                           ),
                         ),
                       ),
-                      const Spacer(flex: 3),
+                      const Spacer(flex: 2),
                       ElevatedButton(
                         onPressed: () {
                           Navigator.pushNamed(context, SignInScreen.routeName);
                         },
-                        child: const Text("Continue"),
+                        child: const Text("Skip To Login"),
                       ),
                       const Spacer(),
                     ],
@@ -115,7 +115,9 @@ class _SplashContentState extends State<SplashContent> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        const Spacer(),
+        const Spacer(
+          flex: 2,
+        ),
         const Text(
           "SwiftCart.in",
           style: TextStyle(
@@ -131,8 +133,8 @@ class _SplashContentState extends State<SplashContent> {
         const Spacer(flex: 2),
         Image.asset(
           widget.image!,
-          height: 265,
-          width: 235,
+          height: 300,
+          width: 295,
         ),
       ],
     );

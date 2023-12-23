@@ -8,8 +8,6 @@ import 'package:swiftcart/default%20components/noacc.dart';
 import 'package:swiftcart/screens/signin_signout_usrAuth/forgot.dart';
 import 'package:swiftcart/screens/signin_signout_usrAuth/loginsucess_scrn.dart';
 
-
-
 class SignInScreen extends StatefulWidget {
   static String routeName = "/signscreen";
 
@@ -54,15 +52,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SocalCard(
-                        icon: "assets/icons/google-icon.svg",
-                        press: () {},
-                      ),
-                      SocalCard(
-                        icon: "assets/icons/facebook-2.svg",
-                        press: () {},
-                      ),
-                      SocalCard(
-                        icon: "assets/icons/twitter.svg",
+                        icon: "icons/google-icon.svg",
                         press: () {},
                       ),
                     ],
@@ -78,6 +68,7 @@ class _SignInScreenState extends State<SignInScreen> {
     );
   }
 }
+
 class SocalCard extends StatelessWidget {
   const SocalCard({
     Key? key,
@@ -169,8 +160,8 @@ class _SignFormState extends State<SignForm> {
               hintText: "Enter your email",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Mail.svg"),
             ),
           ),
           const SizedBox(height: 20),
@@ -200,8 +191,8 @@ class _SignFormState extends State<SignForm> {
               hintText: "Enter your password",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
-              floatingLabelBehavior: FloatingLabelBehavior.always,
-              suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Lock.svg"),
+              floatingLabelBehavior: FloatingLabelBehavior.never,
+              prefixIcon: CustomSurffixIcon(svgIcon: "icons/Lock.svg"),
             ),
           ),
           const SizedBox(height: 20),
@@ -246,4 +237,3 @@ class _SignFormState extends State<SignForm> {
     );
   }
 }
-
